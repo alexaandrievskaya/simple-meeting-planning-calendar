@@ -1,0 +1,93 @@
+.container {
+  margin-top: 60px;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: '▼';
+    position: absolute;
+    width: 37px;
+    color: #6c757d;
+    font-weight: bold;
+    font-size: 16px;
+    right: -11px;
+    bottom: 8px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &:before {
+    content: '';
+    right: 0;
+    top: 0;
+    width: 37px;
+    height: 38px;
+    background: lightgray;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+    z-index: 1;
+    border: #6c757d 1px solid;
+    border-radius: 3px;
+  }
+  select {
+    position: relative;
+    width: 250px;
+    appearance: none;
+    background: whitesmoke;
+    color: black;
+    border: #6c757d 1px solid;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 9px;
+    margin: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 38px;
+  }
+}
+
+button {
+  border: #6c757d 1px solid !important;
+  background: lightgray !important;
+  color: black !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1104px;
+}
+
+table,
+th,
+td {
+  border: 1px solid darkgray;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+th {
+  background-color: lightgray;
+}
+
+.schedule-cell {
+  position: relative;
+}
+
+.schedule-entry {
+  background-color: lightblue;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
